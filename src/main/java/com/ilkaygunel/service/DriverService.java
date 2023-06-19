@@ -14,7 +14,7 @@ public class DriverService {
     }
 
     public void saveSingleDriver(Driver driver) {
-        driverRepository.save(driver);
+        driver = driverRepository.save(driver);
     }
 
     public Driver getDriverByName(String driverName) {
